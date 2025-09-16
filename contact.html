@@ -3,52 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DVoilandgas - Contact</title>
+  <title>Contact Us - DVOil and Gas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-  <img src="2025091603170105.jpg" alt="DVoilandgas Logo">
-</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <section class="content">
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you! Reach us at:  
-   <br>Email: dvoilandgas@outlook.com
-     
-</p>
-    
+    <p>We’d love to hear from you! Reach us via the form below.</p>
+    <br>
+    <strong>Email:</strong> dvoilandgas@outlook.com <br>
+    <strong>Website:</strong> <a href="https://dvoilandgas.github.io/dvoilandgas-website/" target="_blank">www.dvoilandgas.com</a> <br>
+    <strong>Address:</strong> 2/537 Boundary St, Brisbane City QLD 4000, Australia
+  </section>
 
-  
-<main>
-  <p>We’d love to hear from you. Please fill out the form below:</p>
+  <main>
+    <form action="https://formsubmit.co/dvoilandgas@outlook.com" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required>
 
-  <form action="https://formsubmit.co/dvoilandgas@outlook.com" method="POST">
-    <label for="name">Your Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" required>
 
-    <label for="email">Your Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" required></textarea>
 
-    <label for="message">Message</label>
-    <textarea name="message" id="message" placeholder="Type your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
 
-    <button type="submit">Send Message</button>
-  </form>
-</main>
-
-<footer>
-  <p>© 2025 DVoilandgas. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>© 2025 DVoilandgas. All rights reserved.</p>
+  </footer>
 </body>
 </html>
