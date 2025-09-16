@@ -3,75 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - DVOil and Gas</title>
+  <title>Contact Us - DVoilandgas</title>
   <link rel="stylesheet" href="style.css">
-
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
       margin: 0;
       padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-
-    h1 {
-      text-align: center;
-      color: #0077cc;
-      font-size: 36px;
-      margin-bottom: 30px;
+    .logo img {
+      height: 50px;
     }
-
-    .contact-info {
-      margin: 20px 0;
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    main {
       padding: 20px;
-      background: #f9f9f9;
-      border: 1px solid #ddd;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #003366;
+    }
+    .contact-info {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
       border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
     }
+    .contact-info p {
+      font-size: 18px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #0055aa;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #003366;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
 
-<main>
-  <h2 style="text-align: center;">Contact Us</h2>
+  <header>
+    <div class="logo">
+      <img src="2025091603170105.jpg" alt="DVoilandgas Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Contact details box -->
-  <div style="max-width: 500px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center; background: #f9f9f9;">
-    <p><strong>Email:</strong><br> dvoilandgas@outlook.com</p>
-    <p><strong>Address:</strong><br> 2/537 Boundary St, Brisbane City QLD 4000, Australia</p>
-  </div>
+  <main>
+    <h2>Contact Us</h2>
 
-  <p style="text-align: center; margin-top: 20px;">We’d love to hear from you. Please fill out the form below:</p>
+    <div class="contact-info">
+      <p>Email: dvoilandgas@outlook.com</p>
+      <p>Address: 2/537 Boundary St, Brisbane City QLD 4000, Australia</p>
+    </div>
 
-  <!-- Contact form -->
-  <form action="https://formsubmit.co/dvoilandgas@outlook.com" method="POST" style="max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px;">
-    <label for="name">Your Name</label>
-    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+    <form action="https://formsubmit.co/dvoilandgas@outlook.com" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
-    <label for="email">Your Email</label>
-    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
-    <label for="message">Your Message</label>
-    <textarea name="message" id="message" placeholder="Type your message" required></textarea>
+      <label for="message">Your Message</label>
+      <textarea name="message" id="message" placeholder="Type your message" required></textarea>
 
-    <!-- Hidden settings -->
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://dvoilandgas.github.io/dvoilandgas-website/thankyou.html">
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
 
-    <button type="submit" style="padding: 10px; background: #0073e6; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      Send Message
-    </button>
-  </form>
-</main>
+  <footer>
+    <p>© 2025 DVoilandgas. All rights reserved.</p>
+  </footer>
 
-<footer>
-  <p style="text-align: center; margin-top: 30px;">© 2025 DVoilandgas. All rights reserved.</p>
-</footer>
+</body>
+</html>
