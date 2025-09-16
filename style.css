@@ -43,13 +43,14 @@ header {
 }
 
 .hero {
-  background: url(1fac060faf011a6062d9dc6eaa9e38ba.jpg) center/cover no-repeat;
-  color: white;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    background: url(1fac060faf011a6062d9dc6eaa9e38ba.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;  /* full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* make text visible */
+    text-align: center;
 }
 
 .hero-content h1 {
