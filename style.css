@@ -122,3 +122,8 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
 }
+
+.logo img {
+  height: 50px;   /* makes the logo 50px tall */
+  width: auto;    /* keeps the shape correct */
+}
