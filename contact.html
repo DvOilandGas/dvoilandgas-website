@@ -27,21 +27,37 @@
    <br>Email: dvoilandgas@outlook.com
      
 </p>
-    <form class="contact-form" action=<form action="https://formspree.io/f/{form_id}" method="post">
-  <label for="email">Your Email</label>
-  <input name="Email" id="email" type="email">
-  <button type="submit">Submit</button>
-</form>" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="_replyto" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit" class="btn">Send</button>
-</form>
-    </form>
-  </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DVOil and Gas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+<main>
+  <p>We’d love to hear from you. Please fill out the form below:</p>
 
-  <footer>
-    <p>© 2025 DVoilandgas. All rights reserved.</p>
-  </footer>
+  <form action="https://formsubmit.co/dvoilandgas@outlook.com" method="POST">
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" placeholder="Type your message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2025 DVoilandgas. All rights reserved.</p>
+</footer>
 </body>
 </html>
