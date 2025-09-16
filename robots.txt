@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dvsoils.github.io/dvoilandgas/sitemap.xml
