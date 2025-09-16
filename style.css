@@ -127,3 +127,77 @@ footer {
   height: 50px;   /* makes the logo 50px tall */
   width: auto;    /* keeps the shape correct */
 }
+/* ---------- Responsive navbar / hamburger menu ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1E3A8A;
+  padding: 10px 16px;
+  position: relative;
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* desktop links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 8px;
+}
+
+/* hamburger button hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;              /* hide by default on mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    width: 200px;
+    background: #1E3A8A;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    z-index: 50;
+  }
+
+  .nav-links.active {
+    display: flex;              /* shown when .active added by JS */
+  }
+
+  .nav-links li {
+    margin: 6px 0;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 8px 12px;
+  }
+}
